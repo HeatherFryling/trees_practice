@@ -5,11 +5,11 @@ from traversals import Traversals
 def main():
     node1 = Node(5)
     node2 = Node(3)
-    node3 = Node(2)
+    node3 = Node(4)
     node4 = Node(1)
     node6 = Node(8)
     node7 = Node(7)
-    node8 = Node(6)
+    node8 = Node(9)
 
     my_tree = Tree(node1)
     node1.add_left_child(node2)
@@ -20,7 +20,7 @@ def main():
     node6.add_right_child(node8)
 
     trav = Traversals()
-    trav.post_order(my_tree.root)
+    trav.in_order(my_tree.root)
 
 
 
